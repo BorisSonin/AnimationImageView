@@ -13,6 +13,7 @@
 		C74F21522943A4BD007D9F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74F21502943A4BD007D9F3B /* Main.storyboard */; };
 		C74F21542943A4BF007D9F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74F21532943A4BF007D9F3B /* Assets.xcassets */; };
 		C74F21572943A4BF007D9F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74F21552943A4BF007D9F3B /* LaunchScreen.storyboard */; };
+		C74F21602943CBBB007D9F3B /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = C74F215F2943CBBB007D9F3B /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74F21602943CBBB007D9F3B /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AnimationImageView;
+			packageProductDependencies = (
+				C74F215F2943CBBB007D9F3B /* SpringAnimation */,
+			);
 			productName = AnimationImageView;
 			productReference = C74F21472943A4BD007D9F3B /* AnimationImageView.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C74F213E2943A4BD007D9F3B;
+			packageReferences = (
+				C74F215E2943CBBB007D9F3B /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = C74F21482943A4BD007D9F3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C74F215E2943CBBB007D9F3B /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74F215F2943CBBB007D9F3B /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74F215E2943CBBB007D9F3B /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C74F213F2943A4BD007D9F3B /* Project object */;
 }
